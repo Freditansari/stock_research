@@ -134,7 +134,7 @@ model.add(Dense(100, activation='relu'))
 model.add(Dropout(0.2))
 # model.add(CuDNNLSTM(100, activation='relu', input_shape=(length, n_features)))
 model.add(Dense(1))
-model.compile(optimizer='adam', loss='mse')
+model.compile(optimizer='SGD', loss='mse')
 
 
 # In[17]:
